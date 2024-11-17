@@ -14,3 +14,6 @@ vim.keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = ":noh" })
 
 -- Keymap comment
 vim.keymap.set("v", "<leader>/", "gcc", { desc = "Comment", remap = true })
+
+-- Keymap ctrl+c to escape to fix some processing
+vim.keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
